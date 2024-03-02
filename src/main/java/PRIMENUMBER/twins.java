@@ -1,4 +1,4 @@
-package Greatest.comon.divisor;
+package PRIMENUMBER;
 //hacker rank problem twins
 import java.util.*;
 public class twins {
