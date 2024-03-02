@@ -55,6 +55,7 @@ public class Segmentsieve {
         int n=sc.nextInt();
         System.out.println("enter ending index");
         int m=sc.nextInt();
+        //creating a list to stor all prime number form n to m
         ArrayList<Integer> list=seive(m);
         System.out.println(list);
         segmentsiv(n,m);
