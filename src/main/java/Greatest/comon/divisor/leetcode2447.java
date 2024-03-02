@@ -2,7 +2,7 @@ package Greatest.comon.divisor;
 
 import java.util.Scanner;
 
-//2447. Number of Subarrays With GCD Equal to K
+//2447... Number of Subarrays With GCD Equal to K
 public class leetcode2447 {
     //function to find gcd
     static int gcd(int a,int b){
