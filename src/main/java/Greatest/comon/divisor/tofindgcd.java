@@ -3,6 +3,7 @@ package Greatest.comon.divisor;
 import java.util.Scanner;
 
 public class tofindgcd {
+
     //Using brute force approach
     static int gcdbf(int x,int y){
         int a=Math.min(x, y);
@@ -13,6 +14,7 @@ public class tofindgcd {
         }
         return 0;
     }
+
     //Using long division approach
     static int gcdld(int x,int y){
         while(x%y!=0){
@@ -22,6 +24,16 @@ public class tofindgcd {
         }
         return y;
     }
+
+    //using recursion
+    //Euclid algorithm
+    static int gcdre(int x,int y){
+        if(y==0) return x;
+        return gcdre(y,x%y);
+    }
+    // time & space complexity =O(log(min(x,y)))
+
+
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("enter the first number ");
@@ -30,5 +42,6 @@ public class tofindgcd {
         int m=sc.nextInt();
         System.out.println(gcdbf(n,m));
         System.out.println(gcdld(n,m));
+        System.out.println(gcdre(n,m));
     }
 }
