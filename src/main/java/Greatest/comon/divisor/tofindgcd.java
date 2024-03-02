@@ -13,7 +13,15 @@ public class tofindgcd {
         }
         return 0;
     }
-
+    //Using long division approach
+    static int gcdld(int x,int y){
+        while(x%y!=0){
+            int r=x%y;
+            x=y;
+            y=r;
+        }
+        return y;
+    }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("enter the first number ");
@@ -21,5 +29,6 @@ public class tofindgcd {
         System.out.println("enter the second number ");
         int m=sc.nextInt();
         System.out.println(gcdbf(n,m));
+        System.out.println(gcdld(n,m));
     }
 }
